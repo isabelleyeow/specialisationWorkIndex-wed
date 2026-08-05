@@ -40,6 +40,10 @@ header {
     margin-block-end: 3rem;
 }
 
+h2, h3 {
+    margin-top: 2rem;
+}
+
 .mainNavContainer {
     flex: 1;
     display: flex;
