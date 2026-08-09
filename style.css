@@ -48,6 +48,11 @@ p {
     margin-bottom: 1rem;
 }
 
+ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
 .mainNavContainer {
     flex: 1;
     display: flex;
