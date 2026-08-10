@@ -53,6 +53,39 @@ ul {
     padding-left: 1.5rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-row {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.image-row figure {
+    max-width: 50%;
+    margin: 0;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.7rem;
+    color: var(--text-secondary, #666);
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
 .mainNavContainer {
     flex: 1;
     display: flex;
