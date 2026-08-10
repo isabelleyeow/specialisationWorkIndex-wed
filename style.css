@@ -58,6 +58,10 @@ img {
     height: auto;
 }
 
+.touchpianist {
+    max-width: 100%;
+}
+
 .image-row {
     display: flex;
     gap: 1rem;
