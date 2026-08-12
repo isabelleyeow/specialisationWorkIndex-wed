@@ -90,6 +90,12 @@ figcaption {
     text-align: center;
 }
 
+.reference {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-secondary, #666);
+}
+
 .mainNavContainer {
     flex: 1;
     display: flex;
