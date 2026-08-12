@@ -133,7 +133,7 @@ aside {
 footer {
     display: flex;
     justify-content: center;
-    margin-block-start: 3rem;
+    margin-block-start: 1rem;
 }
 
 /*technique from Kevin Powell*/
