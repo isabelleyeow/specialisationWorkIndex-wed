@@ -7,3 +7,10 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+const box = document.querySelector('.time-reveal-section');
+const timeText = document.getElementById('timeDisplay');
+
+box.addEventListener('mouseenter', () => {
+    timeText.style.opacity = '0.25';
+});
