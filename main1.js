@@ -5,3 +5,5 @@ function updateTime() {
     document.getElementById('timeDisplay').textContent = `${hours}:${minutes}`;
 }
 
+updateTime();
+setInterval(updateTime, 1000);
