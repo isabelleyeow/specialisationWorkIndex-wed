@@ -194,3 +194,13 @@ footer {
 @media (width < 600px) {
 
 }
+
+h4 a {
+  color: inherit;       
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+h4 a:hover {
+  opacity: 0.7;
+}
