@@ -72,7 +72,7 @@
 
                 <h4>The sky that follows the day:</h4>
                 <p><strong>What it is:</strong> When users first open the page, the background sky and the glowing orb match the real time of day. It cycles between 6 different moods: dawn, morning, midday, afternoon, dusk and night. All of them reflect on the real time of day. </p>
-                <p>T<strong>How it works:</strong> This works as JavaScript reads the current hour and sorts it into one of the six times of day with a simple <code>getTimeOfDay()</code> function. That time of day then picks a set of three sky colours, an orb colour and a chord. The colours are passed to CSS as custom properties so the entire look changes from one place. </p>
+                <p><strong>How it works:</strong> This works as JavaScript reads the current hour and sorts it into one of the six times of day with a simple <code>getTimeOfDay()</code> function. That time of day then picks a set of three sky colours, an orb colour and a chord. The colours are passed to CSS as custom properties so the entire look changes from one place. </p>
                 <p><strong>Why:</strong> I chose to design it this way to create a different way to tell time, with sound and light. Letting colour carry the time of day means users get a sense of time before they read a single number. It also keeps the experience calm as there is nothing to move or flash to tell them something. </p>
             </section>
 
@@ -94,7 +94,15 @@
             </ul>
            
             <p><strong>Why: </strong> I would say this is the heart of Hourglow as a sonic timer. Each bell is marker of a moment spent like a meditation bell. The counter turns those moments into gentle measure of duration instead of a ticking clock. </p>
-       
+            <p>To make it learnable, I sent out my peer user testing form which showed that a number on its own was a little empty and confusing so the bells are explained in three layers. Each quieter than the last:</p>
+        <ul>
+            <li><p>A permanent label: 'BELLS' since you arrived.</p></li>
+            <li><p>A one time caption at the first bell and it fades after 7 seconds and never returns until opened again.</p></li>
+            <li><p>A frosted card on demand, hovering over, tapping or tabbing to the counter opens "What are the bells?" with a full explanation.</p></li>
+        </ul>
+        </section>
+        <section>
+            <h4>Revealing the time</h4>
         </section>
 
         </main>
