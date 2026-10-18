@@ -120,6 +120,11 @@
             <h3>Extended Technique: Web Audio API Synthesis</h3>
             <p>Every sound in Hourglow was generated live in the browser with the Web Audio API. There is no external audio files used and was built from 3 parts.</p>
             <h4>The hum </h4>
+            <p>Four sine wave oscillators play the notes of the current chord. Each time of the day has its own chord, for example: a slightly muffled G major 7 at night and a clear C major 7 in the morning. All four notes are connected to one shared <code>GainNode</code>, which acts as a volume knob. When listening begins, the volume fades in from 0 to 0.035 over 5 seconds with <code>linearRampToValueAtTime</code>, so the sound arrives gently instead of switching on. </p>
+            <h4>Why Web Audio API?</h4>
+            <ul>
+                <li><p><strong>It responds to the day. </strong> The sound is generated rather than recorded, the chord and bell speed can change with the time of day without needing dozens of audio files.</p></li>
+                <li><p><strong>Precise timing. </strong> Volume changes are scheduled on the audio clock, which is far more accurate than animating volume with JavaScript timers. This allows the fades to be more smooth. </p></li>
         </section>
         </main>
         <!-- this is an empty element which helps with spacing -->
