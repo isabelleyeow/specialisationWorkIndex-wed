@@ -111,9 +111,16 @@
 
         <section>
             <h4>Previewing other times</h4>
-            <p><strong>What is it: </strong></p>
+            <p><strong>What is it: </strong>The links at the bottom show Hourglow at other times of the day.</p>
+            <p><strong>How it works: </strong>Each link adds <code>?hour=</code> to the address. <code>URLSearchParams</code> reads this value and uses it instead of the real hour. </p>
+            <p><strong>Why: </strong> Without this, someone visiting 3pm could never see the night sky. It was essential for peer testing and lets anyone explore the full day in a minute. </p>
         </section>
 
+        <section>
+            <h3>Extended Technique: Web Audio API Synthesis</h3>
+            <p>Every sound in Hourglow was generated live in the browser with the Web Audio API. There is no external audio files used and was built from 3 parts.</p>
+            <h4>The hum </h4>
+        </section>
         </main>
         <!-- this is an empty element which helps with spacing -->
         <aside></aside>
