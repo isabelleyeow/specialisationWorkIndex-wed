@@ -72,6 +72,7 @@
 
                 <h4>The sky that follows the day:</h4>
                 <img src="sky.png">
+                <!--add more information about why night only has one colour-->
                 <p><strong>What it is:</strong> When users first open the page, the background sky and the glowing orb match the real time of day. It cycles between 6 different moods: dawn, morning, midday, afternoon, dusk and night. All of them reflect on the real time of day. </p>
                 <p><strong>How it works:</strong> This works as JavaScript reads the current hour and sorts it into one of the six times of day with a simple <code>getTimeOfDay()</code> function. That time of day then picks a set of three sky colours, an orb colour and a chord. The colours are passed to CSS as custom properties so the entire look changes from one place. </p>
                 <p><strong>Why:</strong> I chose to design it this way to create a different way to tell time, with sound and light. Letting colour carry the time of day means users get a sense of time before they read a single number. It also keeps the experience calm as there is nothing to move or flash to tell them something. </p>
@@ -79,6 +80,7 @@
 
         <section>
                 <h4>Press anywhere to begin</h4>
+                <img src="press.png">
                 <p><strong>What it is:</strong> A softly pulsing line or text that invites users to press anywhere for the instrument to start. Their first press starts the sound and the hint fades away. </p>
                 <p><strong>How it works:</strong> Browsers tend to not allow websites to play around until the user interacts with the page, hence the first pointerdown event creates the <code>AudioContext</code>, starting the hum and scheduling the first bell 1.5 seconds later. </p>
                 <p><strong>Why: </strong>Instead of hiding this rule behind a play button, I turned it into a gentle invitation. My design was meant to not have a start or stop button so the first touch feels like stepping into a room rather than switching on a machine. </p>
