@@ -148,7 +148,51 @@
                 <ul>
                     <li><strong>Colour carries information,</strong> it is the first clue to time so users can read the time of day before they read any text. It gives them a hint at what part of the day they might be in, like a visual cue. </li>
                     <li><strong>Readable on every sky.</strong> On the three light, the text colour (<code>--ink</code>) automatically switches from near-white to deep navy so the text stays readable. The time on the orb is always dark because I wanted to make the orb lighter and more pale in comparison to the background as it was suppose to mimic the sun in a way. </li>
+                    <li><strong>Smooth changes.</strong> The sky colours are registered with CSS <code>@property</code>, which lets the browser animate between colours instead of jumping. </li>
                 </ul>
+        </section>
+
+        <section>
+            <h4>Typography</h4>
+            <table class="typography-table">
+                <thead>
+                    <tr>
+                    <th>Typeface</th>
+                    <th>Used for</th>
+                    <th>Why</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>
+                        Cormorant Garamond
+                        <br />
+                        (italic serif)
+                    </td>
+                    <td>
+                        the time, the bell count, the first-bell
+                        caption, the card title
+                    </td>
+                    <td>
+                        soft, human and calm: the “voice”
+                        of the instrument
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        Space Grotesk (sans-serif)
+                    </td>
+                    <td>
+                        the title, instructions, labels and
+                        preview links
+                    </td>
+                    <td>
+                        clean and quiet: the “interface”
+                        around it
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
         
         </section>
         </main>
