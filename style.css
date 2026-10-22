@@ -214,7 +214,50 @@ a:hover {
   border: 1px solid #303030;
   border-radius: 9px;
   overflow: hidden;
-  font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.4;
+}
+
+/* header*/
+.typography-table thead {
+  background-color: #222222;
+}
+
+.typography-table th {
+  text-align: left;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-bottom: 1px solid #383838;
+}
+
+/* table cells*/
+.typography-table td {
+  padding: 7px 12px;
+  vertical-align: top;
+  border-bottom: 1px solid #303030;
+}
+
+/* the vertical dividers */
+.typography-table th:not(:last-child),
+.typography-table td:not(:last-child) {
+  border-right: 1px solid #303030;
+}
+.typography-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* column widths  */
+.typography-table th:nth-child(1),
+.typography-table td:nth-child(1) {
+  width: 25%;
+}
+
+.typography-table th:nth-child(2),
+.typography-table td:nth-child(2) {
+  width: 41%;
+}
+
+.typography-table th:nth-child(3),
+.typography-table td:nth-child(3) {
+  width: 34%;
 }
