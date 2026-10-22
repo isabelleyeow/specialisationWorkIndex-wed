@@ -74,6 +74,10 @@
                 <img src="sky.png">
                 <!--add more information about why night only has one colour-->
                 <p><strong>What it is:</strong> When users first open the page, the background sky and the glowing orb match the real time of day. It cycles between 6 different moods: dawn, morning, midday, afternoon, dusk and night. All of them reflect on the real time of day. </p>
+                <ul>
+                    <li>I chose to only create one colour palette for 'night' as I believe  more users are active/online during the day more than at night, this way I am still able to make the design minimal yet informative. </li>
+                </ul>
+                
                 <p><strong>How it works:</strong> This works as JavaScript reads the current hour and sorts it into one of the six times of day with a simple <code>getTimeOfDay()</code> function. That time of day then picks a set of three sky colours, an orb colour and a chord. The colours are passed to CSS as custom properties so the entire look changes from one place. </p>
                 <p><strong>Why:</strong> I chose to design it this way to create a different way to tell time, with sound and light. Letting colour carry the time of day means users get a sense of time before they read a single number. It also keeps the experience calm as there is nothing to move or flash to tell them something. </p>
             </section>
@@ -294,6 +298,60 @@
             </ul>
             <p><strong>Mouse and touch:</strong> pointer events handle both. Touch screens automatically show "tap the light, hold to breathe" instead of hover instructions using <code>@media (hover: none)</code>.</p>
             <p><strong>Fallbacks:</strong> browsers without frosted-glass support (<code>backdrop-filter</code>) get a solid, readable background instead, through <code>@supporters</code></p>
+        </section>
+        <section class="responsive-design">
+            <h4>Responsive and Adaptive design</h4>
+            <p>Hourglow responds smoothly at every width, then adapts its layout at four set screen sizes. The orb size uses <code>clamp(150px, 36 vmin, 420px)</code>, so it grows with the screen but never becomes too small or large. Spacing around the edges also scales with <code>clamp()</code>.</p>
+                <div class="breakpoint-grid">
+
+                <article class="breakpoint-card">
+                <div class="breakpoint-content">
+                    <h4>Medium</h4>
+                    <p class="breakpoint-width">Under 840px</p>
+                    <p>
+                    The orb is larger relative to the screen (44vmin).
+                    The preview label hides, preview links centre along
+                    the bottom, and the caption becomes smaller.
+                    </p>
+                </div>
+                </article>
+
+                <article class="breakpoint-card">
+                <div class="breakpoint-content">
+                    <h4>Expanded</h4>
+                    <p class="breakpoint-width">840–1199px</p>
+                    <p>
+                    Default layout: title at the top left, bells at the
+                    top right, preview label at the bottom left, and
+                    glass preview bar at the bottom right.
+                    </p>
+                </div>
+                </article>
+
+                <article class="breakpoint-card">
+                <div class="breakpoint-content">
+                    <h4>Large</h4>
+                    <p class="breakpoint-width">1200–1600px</p>
+                    <p>
+                    Labels, bell count and caption grow slightly to
+                    suit the larger screen.
+                    </p>
+                </div>
+                </article>
+
+                <article class="breakpoint-card">
+                <div class="breakpoint-content">
+                    <h4>Extra-large</h4>
+                    <p class="breakpoint-width">Over 1600px</p>
+                    <p>
+                    The orb can grow up to 520px. Wider margins,
+                    larger time, bell count and explanation card
+                    keep the layout balanced.
+                    </p>
+                </div>
+                </article>
+
+            </div>
         </section>
 
 
