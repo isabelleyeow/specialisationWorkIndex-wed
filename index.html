@@ -289,7 +289,11 @@
             <p><strong>Keyboard and screen readers:</strong> The bell counter can be reached with the tab key and opens its explanation card on focus</p>
             <ul>
                 <li>The card is connected with <code>aria-describedby</code></li>
+                <li>The first bell caption uses <code>aria-live</code> so screen readers announce it.</li>
+                <li>Decorative layers are hidden from screen readers with <code>aria-hidden</code>.</li>
             </ul>
+            <p><strong>Mouse and touch:</strong> pointer events handle both. Touch screens automatically show "tap the light, hold to breathe" instead of hover instructions using <code>@media (hover: none)</code>.</p>
+            <p><strong>Fallbacks:</strong> browsers without frosted-glass support (<code>backdrop-filter</code>) get a solid, readable background instead, through <code>@supporters</code></p>
         </section>
 
 
