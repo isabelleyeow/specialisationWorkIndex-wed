@@ -372,3 +372,17 @@ a:hover {
     letter-spacing: 0.04em;
     opacity: 0.6;
 }
+/* to make the rounded corners to help make it look more cohesive*/
+.typography-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  background-color: #252525;
+  color: #e5e5e5;
+  border: 1px solid #3b3b3b;
+  border-radius: 9px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.4;
+}
