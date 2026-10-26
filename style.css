@@ -397,11 +397,14 @@ main figure,
     margin: 0 0 1rem;
 }
 main h3 {
-    margin: 0 0 0.75rem;
+    margin: 0 0 0.45rem;
 }
 
 main h4 {
     margin: 1.5rem 0 0.5rem;
+}
+main h3 + h4 {
+    margin-top: 0;
 }
 main section > h4:first-child {
     margin-top: 0;
